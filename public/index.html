@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather Dashboard</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Enter a city..." aria-label="Search">
+                <button id="searchButton">Search</button>
+            </div>
+        </header>
+        <main>
+            <section id="weatherInfo" class="card">
+                <h2>Weather Details</h2>
+                <div class="weather-content">
+                    <div class="weather-temp">
+                        <img id="weatherIcon" src="" alt="Weather Icon">
+                        <p id="temperature"></p>
+                    </div>
+                    <p id="weatherDescription"></p><br>
+                    <p id="humidity"></p><br>
+                    <p id="windSpeed"></p><br>
+                    <p id="feelsLike"></p><br>
+                    <p id="rainVolume"></p>
+                </div>
+            </section>
+            <section id="airQualityInfo" class="card">
+                <h2>Air Quality</h2>
+                <p id="aqi"></p>
+            </section>
+            <section id="locationInfo" class="card">
+                <h2>Location</h2>
+                <p id="location"></p>
+                <a id="mapLink" href="#" target="_blank">View on Map</a>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
