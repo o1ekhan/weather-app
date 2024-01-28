@@ -42,6 +42,8 @@ function updateWeatherUI(weather) {
     document.getElementById('windSpeed').textContent = `Wind Speed: ${weather.windSpeed} m/s`;
     document.getElementById('feelsLike').textContent = `Feels Like: ${weather.feelsLike}°C`;
     document.getElementById('rainVolume').textContent = `Rain Volume: ${weather.rainVolume} mm`;
+    document.getElementById('latitude').textContent = `Latitude: ${weather.coord.lat}`;
+    document.getElementById('longtitude').textContent = `Longtitude: ${weather.coord.lon}`;
     document.getElementById('weatherIcon').src = `http://openweathermap.org/img/w/${weather.icon}.png`;
 
     // Update the map or coordinates display if you have one
