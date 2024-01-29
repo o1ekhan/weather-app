@@ -16,7 +16,7 @@ To set up the Weather Dashboard application on your local machine, follow these 
 1. **Clone the Repository**
 
    ```sh
-   git clone https://github.com/your-username/weather-app.git
+   git clone https://github.com/o1ekhan/weather-app.git
    cd weather-app
    
 2. Install Dependencies
@@ -27,9 +27,14 @@ npm install
 ```
 
 3. API Keys
-Sign up and obtain API keys from: OpenWeatherAPI
+Sign up and obtain API keys from:
+
+OpenWeatherAPI
+
 AQICN
+
 LocationIQ
+
 Create a .env file in the root of the project and add your API keys like this:
 ```
 OPENWEATHER_API_KEY=your_openweather_api_key_here
@@ -44,27 +49,47 @@ node server.js
 ```
 Visit http://localhost:3000 in your web browser to view the application.
 
+## API usage details
+**Weather Data**
 
-API Usage
-Weather Data
 Endpoint: /weather
+
 Method: GET
+
 Query Parameters:
-lat: Latitude of the location
-lon: Longitude of the location
+
+      lat: Latitude of the location
+
+      lon: Longitude of the location
+
 Response: JSON object containing weather details.
 
-Air Quality Data
+---------------------------------------------------------------------------------------------------------------
+
+**Air Quality Data**
+
 Endpoint: /air-quality
+
 Method: GET
+
 Query Parameters:
-lat: Latitude of the location
-lon: Longitude of the location
+
+      lat: Latitude of the location
+
+      lon: Longitude of the location
+
 Response: JSON object containing the air quality index.
 
-Geocoding
+---------------------------------------------------------------------------------------------------------------
+
+**Geocoding**
+
 Endpoint: /search
+
 Method: GET
+
 Query Parameters:
-city: Name of the city to search
+
+      city: Name of the city to search
+
 Response: JSON object containing the weather and air quality data for the searched city.
