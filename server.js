@@ -41,7 +41,7 @@ app.get('/search', async (req, res) => {
                 country: weatherResponse.data.sys.country,
                 feelsLike: weatherResponse.data.main.feels_like,
                 icon: weatherResponse.data.weather[0].icon,
-                rainVolume: weatherResponse.data.rain ?weatherResponse.data.rain['3h'] : 0
+                rainVolume: weatherResponse.data.rain ? weatherResponse.data.rain['3h'] : null,
             },
             airQuality: {
                 aqi: airQualityResponse.data.data.aqi,

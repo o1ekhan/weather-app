@@ -36,7 +36,7 @@ h1 {
 
 #searchInput {
     padding: 10px;
-    width: calc(100% - 122px); /* Button width + padding */
+    width: calc(100% - 122px);
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-right: 10px;
@@ -70,16 +70,27 @@ main {
 
 .weather-content {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
-.weather-temp {
+.weather-detail {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
-#weatherIcon {
+.weather-detail label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.weather-detail span {
+    display: inline-block;
+    min-width: 50px;
+}
+
+.weather-icon {
     width: 100px;
     margin-right: 20px;
 }
@@ -88,4 +99,26 @@ main {
     .weather-content {
         flex-direction: column;
     }
+    
+    .weather-detail span {
+        min-width: 0;
+        margin-top: 0.5rem;
+    }
+}
+
+#latitude, #longitude {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+#temperature {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#countryCode, #pressure {
+    font-style: italic;
+    color: #555;
 }

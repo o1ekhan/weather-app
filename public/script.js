@@ -41,7 +41,12 @@ function updateWeatherUI(weather) {
     document.getElementById('humidity').textContent = `Humidity: ${weather.humidity}%`;
     document.getElementById('windSpeed').textContent = `Wind Speed: ${weather.windSpeed} m/s`;
     document.getElementById('feelsLike').textContent = `Feels Like: ${weather.feelsLike}°C`;
-    document.getElementById('rainVolume').textContent = `Rain Volume: ${weather.rainVolume} mm`;
+    const rainVolumeText = weather.rainVolume !== null ? `${weather.rainVolume} mm` : 'No rain data';
+    document.getElementById('rainVolume').textContent = rainVolumeText;
+    document.getElementById('countryCode').textContent = weather.country;
+    document.getElementById('pressure').textContent = `${weather.pressure} hPa`;
+    document.getElementById('latitude').textContent = `Latitude: ${weather.coordinates.lat}`;
+    document.getElementById('longitude').textContent = `Longitude: ${weather.coordinates.lon}`;
     document.getElementById('weatherIcon').src = `http://openweathermap.org/img/w/${weather.icon}.png`;
 
     // Update the map or coordinates display if you have one

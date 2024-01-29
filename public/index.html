@@ -19,15 +19,46 @@
             <section id="weatherInfo" class="card">
                 <h2>Weather Details</h2>
                 <div class="weather-content">
-                    <div class="weather-temp">
-                        <img id="weatherIcon" src="" alt="Weather Icon">
-                        <p id="temperature"></p>
+                    <div class="weather-detail weather-temp">
+                        <img id="weatherIcon" src="" alt="Weather Icon" class="weather-icon">
+                        <span id="temperature"></span>
                     </div>
-                    <p id="weatherDescription"></p><br>
-                    <p id="humidity"></p><br>
-                    <p id="windSpeed"></p><br>
-                    <p id="feelsLike"></p><br>
-                    <p id="rainVolume"></p>
+                    <div class="weather-detail">
+                        <label>Description:</label>
+                        <span id="weatherDescription"></span>
+                    </div>
+                    <div class="weather-detail">
+                        <label>Humidity:</label>
+                        <span id="humidity"></span>
+                    </div>
+                    <div class="weather-detail">
+                        <label>Wind Speed:</label>
+                        <span id="windSpeed"></span>
+                    </div>
+                    <div class="weather-detail">
+                        <label>Country Code:</label>
+                        <span id="countryCode"></span>
+                    </div>
+                    <div class="weather-detail">
+                        <label>Pressure:</label>
+                        <span id="pressure"></span>
+                    </div>
+                    <div class="weather-detail">
+                        <label>Feels Like:</label>
+                        <span id="feelsLike"></span>
+                    </div>
+                    <div class="weather-detail">
+                        <label>Latitude:</label>
+                        <span id="latitude"></span>
+                    </div>
+                    <div class="weather-detail">
+                        <label>Longitude:</label>
+                        <span id="longitude"></span>
+                    </div>
+                    <div class="weather-detail">
+                        <label>Rain Volume (last 3 hours):</label>
+                        <span id="rainVolume"></span>
+                    </div>
                 </div>
             </section>
             <section id="airQualityInfo" class="card">
